@@ -11,19 +11,19 @@
   color: #ffffff;
 }
 .btn-with-arrow {
-  width: 98%;
   position: relative;
+  padding: 15px 20px 16px;
   &::before {
     content: "";
     position: absolute;
     background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath fill='%23fff' d='M16.172 9l-6.071-6.071 1.414-1.414 8.485 8.485-8.485 8.485-1.414-1.414 6.071-6.071h-16.172v-2z'%3E%3C/path%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
+    background-size: content;
     width: 41px;
     height: 41px;
-    right: 0;
-    top: 0;
+    right: 1px;
+    top: 2px;
   }
 }
 .bordered-btn {

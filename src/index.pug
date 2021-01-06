@@ -9,23 +9,23 @@ html(lang="ru")
 
     section.search
       .container 
-        .search__box.box
-          h1 Найдём номера под ваши пожелания
+        .card
+          h1.card__title Найдём номера под ваши пожелания
           form.form
-            .form__group-dropdowns.group-dropdowns
-              .group-dropdowns__left
-                h2
+            .group-of-fields.form__group-of-fields
+              .group-of-fields__item.field
+                h2.field__title
                   label(for="checkin") прибытие
-                input(id="checkin" value="ДД.ММ.ГГГГ" name="date-of-checkin")  
-              .group-dropdowns__right
-                h2 
+                input.field__input(id="checkin" placeholder="ДД.ММ.ГГГГ" name="date-of-checkin")  
+              .group-of-fields__item.field
+                h2.field__title 
                   label(for="checkout") выезд
-                input( id="checkout" value="ДД.ММ.ГГГГ" name="date-of-checkout" )  
-            .form__dropdown
-              h2 
+                input.field__input( id="checkout" placeholder="ДД.ММ.ГГГГ" name="date-of-checkout" )  
+            .field
+              h2.field__title 
                 label(for="guests") гости
-              input( id="guests" value="Сколько гостей" name="count-of-guests" )  
-            button.form__button.button.gradient-btn.btn-with-arrow 
+              input.field__input( id="guests" placeholder="Сколько гостей" name="count-of-guests" )  
+            button.form__btn.button.gradient-btn.btn-with-arrow(type="button" aria-label="перейти к подбору номера") 
               a(href="#") подобрать номер
         p.search__description Лучшие номера для вашей работы, отдыха и просто вдохновения
 

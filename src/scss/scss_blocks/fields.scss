@@ -1,0 +1,21 @@
+.group-of-fields {
+  display: flex;
+  justify-content: space-between;
+  &__item input {
+    max-width: 150px;
+  }
+}
+
+.field {
+  &__title {
+    margin-bottom: 5px;
+  }
+  &__input {
+    border: $dark-shade25 solid 1px;
+    padding: 13px 15px;
+    border-radius: 4px;
+    color: $dark-shade75;
+    font-size: 14px;
+    width: 100%;
+  }
+}

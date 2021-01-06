@@ -76,8 +76,9 @@ p {
   }
 }
 
-@import "./scss_blocks/box.scss";
+@import "./scss_blocks/cards.scss";
 @import "./scss_blocks/buttons.scss";
+@import "./scss_blocks/fields.scss";
 
 @import "./scss_modules/header.scss";
 
@@ -89,6 +90,17 @@ p {
   max-width: 1440px;
   min-height: 830px;
   margin: 0 auto;
+  padding-top: 71px;
+}
+
+.form {
+  &__group-of-fields {
+    margin-bottom: 22px;
+  }
+  &__btn {
+    margin: 31.5px 0 0 -2px;
+    width: 100%;
+  }
 }
 
 @import "./scss_modules/footer.scss";

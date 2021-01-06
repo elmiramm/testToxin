@@ -81,24 +81,13 @@ p {
 
 @import "./scss_modules/header.scss";
 
-.logo {
-  &__link-img,
-  &__link-text {
-    vertical-align: middle;
-  }
-  &__link-text {
-    margin-left: 8px;
-  }
-}
-
 .search {
-  min-height: 830px;
   background-image: url(../images/bg-image-room1.jpg);
   background-repeat: no-repeat;
-  background-position: center 18%;
+  background-position: center 0%;
   background-size: cover;
   max-width: 1440px;
-  min-height: 758px;
+  min-height: 830px;
   margin: 0 auto;
 }
 

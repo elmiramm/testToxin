@@ -1,12 +1,23 @@
 .header {
-  padding: 15px 0;
+  padding: 15px 0 14px;
   &__buttons {
     display: flex;
   }
   &__btn {
-    margin: 0 20px 0 27px;
+    margin: 0 20px 0 25px;
   }
 }
+
+.logo {
+  &__link-img,
+  &__link-text {
+    vertical-align: middle;
+  }
+  &__link-text {
+    margin-left: 8px;
+  }
+}
+
 .menu__list {
   display: flex;
   font-size: 14px;
@@ -25,7 +36,7 @@
       background-position: center;
       width: 24px;
       height: 20px;
-      margin-left: 4px;
+      margin-left: 3px;
       top: -1px;
       cursor: pointer;
     }

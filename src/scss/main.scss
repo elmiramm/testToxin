@@ -1,0 +1,105 @@
+@import "./utils/mixins.scss";
+@import "./utils/fonts.scss";
+@import "./utils/vars.scss";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: $dark-shade100;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+h2 {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+h3 {
+  font-weight: 700;
+  font-size: 19px;
+}
+p {
+  color: $dark-shade75;
+}
+
+.container {
+  height: 100%;
+  max-width: 1189px;
+  margin: 0 auto;
+  padding: 0 15px 0 16px;
+}
+.inner {
+  display: flex;
+  justify-content: space-between;
+  &__right-elements {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@import "./scss_blocks/box.scss";
+@import "./scss_blocks/buttons.scss";
+
+@import "./scss_modules/header.scss";
+
+.logo {
+  &__link-img,
+  &__link-text {
+    vertical-align: middle;
+  }
+  &__link-text {
+    margin-left: 8px;
+  }
+}
+
+.search {
+  min-height: 830px;
+  background-image: url(../images/bg-image-room1.jpg);
+  background-repeat: no-repeat;
+  background-position: center 18%;
+  background-size: cover;
+  max-width: 1440px;
+  min-height: 758px;
+  margin: 0 auto;
+}
+
+@import "./scss_modules/footer.scss";

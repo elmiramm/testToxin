@@ -1,0 +1,32 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title TOXIN | Бронирование номеров в лучшем отеле
+  body.page
+    include pug_modules/header
+
+    section.search
+      .container 
+        .search__box.box
+          h1 Найдём номера под ваши пожелания
+          form.form
+            .form__group-dropdowns.group-dropdowns
+              .group-dropdowns__left
+                h2
+                  label(for="checkin") прибытие
+                input(id="checkin" value="ДД.ММ.ГГГГ" name="date-of-checkin")  
+              .group-dropdowns__right
+                h2 
+                  label(for="checkout") выезд
+                input( id="checkout" value="ДД.ММ.ГГГГ" name="date-of-checkout" )  
+            .form__dropdown
+              h2 
+                label(for="guests") гости
+              input( id="guests" value="Сколько гостей" name="count-of-guests" )  
+            button.form__button.button.gradient-btn.btn-with-arrow 
+              a(href="#") подобрать номер
+        p.search__description Лучшие номера для вашей работы, отдыха и просто вдохновения
+
+    include pug_modules/footer

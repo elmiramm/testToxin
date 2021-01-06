@@ -1,0 +1,26 @@
+header.header
+  .container.inner
+    .inner__left-elements
+      .logo
+        a.logo__link(href="#")
+          img.logo__link-img(src = "images/logo-image.svg" alt = "Img-Логотип Toxin")
+          |
+          |
+          img.logo__link-text(src = "images/logo__text.svg" alt = "Text-Логотип Toxin")
+    .inner__right-elements 
+      nav.menu
+        ul.menu__list
+          li.menu__list-item.is-active
+            a(href='#') О нас
+          li.menu__list-item.menu__list-item--after
+            a(href='#') Услуги
+          li.menu__list-item 
+            a(href='#') Вакансии
+          li.menu__list-item 
+            a(href='#') Новости
+          li.menu__list-item.menu__list-item--after 
+            a(href='#') Соглашения
+      .header__buttons
+        div.button.header__btn 
+          button.button.bordered-btn(type="button" aria-label="войти") войти
+        button.button.gradient-btn(type="button" aria-label="зарегистрироваться") зарегистрироваться

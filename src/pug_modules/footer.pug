@@ -1,3 +1,49 @@
 footer.footer
-  div.container 
-    
+  .container 
+    .footer__widgets
+      .footer__info
+        .logo
+          a.logo__link(href="#")
+            img.logo__link-img(src = "images/logo-image.svg" alt = "Img-Логотип Toxin")
+            |
+            |
+            img.logo__link-text(src = "images/logo__text.svg" alt = "Text-Логотип Toxin")
+        p.footer__description Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+      nav.footer__nav
+        .footer__navigation
+          h2 навигация
+          ul.nav__list
+            li.nav__list-item
+              a.nav__list-link(href="#") О нас
+            li.nav__list-item
+              a.nav__list-link(href="#") Новости
+            li.nav__list-item
+              a.nav__list-link(href="#") Служба поддержки
+            li.nav__list-item
+              a.nav__list-link(href="#") Услуги
+        .footer__about 
+          h2 о нас
+          ul.nav__list
+            li.nav__list-item
+              a.nav__list-link(href="#") О сервисе
+            li.nav__list-item
+              a.nav__list-link(href="#") Наша команда
+            li.nav__list-item
+              a.nav__list-link(href="#") Вакансии
+            li.nav__list-item
+              a.nav__list-link(href="#") Инвесторы
+        .footer__support 
+          h2 cлужба поддержки
+          ul.nav__list
+            li.nav__list-item
+              a.nav__list-link(href="#") Соглашения
+            li.nav__list-item
+              a.nav__list-link(href="#") Сообщества
+            li.nav__list-item
+              a.nav__list-link(href="#") Связь с нами 
+      .footer__subscription
+        h2 подписка
+        p Получайте специальные предложения и новости сервиса
+        .field
+          input.field__input(type= "email" placeholder="Email") 
+    .footer__copiright
